@@ -1,0 +1,10 @@
+name: HopperRework
+version: '1.0.0'
+main: me.spaff.hopperrework.Main
+api-version: '1.21'
+authors: [ spaff ]
+commands:
+  hopperrework:
+    description: Manage commands for HopperRework
+    permission: hpr.command.execute
+    aliases: [ hpr ]
