@@ -18,10 +18,11 @@ import org.bukkit.plugin.java.JavaPlugin;
 import java.util.*;
 
 public final class Main extends JavaPlugin {
+    private static final String version = "1.0.0";
+    private static JavaPlugin instance;
+
     // Spigot configuration
     private static int TICKS_PER_HOPPER_TRANSFER = 8;
-
-    private static JavaPlugin instance;
 
     @Override
     public void onEnable() {
@@ -130,6 +131,10 @@ public final class Main extends JavaPlugin {
             Bukkit.addRecipe(recipe);
             RecipesUtils.addRecipeNamespaceKey(key);
         }
+    }
+
+    public static String getVersion() {
+        return version;
     }
 
     public static JavaPlugin getInstance() {
