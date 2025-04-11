@@ -18,7 +18,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 import java.util.*;
 
 public final class Main extends JavaPlugin {
-    private static final String version = "1.0.0";
+    private static final String version = "1.0.1";
     private static JavaPlugin instance;
 
     // Spigot configuration
